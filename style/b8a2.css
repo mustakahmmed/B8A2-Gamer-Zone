@@ -1,0 +1,220 @@
+/* common style */
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* header section */
+
+
+/* navigation bar */
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgb(159, 159, 159);
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-left: 0.62rem;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+
+}
+
+.nav-links li {
+    margin-left: 1.87rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.our-social-media {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 17px 20px 17px 20px;
+    margin-left: 10px;
+}
+
+/*header intro container */
+.intro-text {}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-left: 3.1rem;
+    margin-right: 3.1rem;
+    margin-top: 40px;
+}
+
+.intro-img>img {
+    max-width: 50vw
+}
+
+.intro-text h3 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px;
+
+}
+
+.intro-text h2 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 1.9rem;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.intro-text ul {
+    list-style: none;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    line-height: 30px;
+    margin-left: 0px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.primary-btn {
+    background-color: #F948B2;
+    border-radius: 3rem;
+    padding: 1.3rem 2.5rem;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+}
+
+#blue-btn {
+    background-color: #4EC5F7;
+}
+
+/* header-bottom */
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header-bottom-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.header-botom-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.bottom-title {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    /* 187.5% */
+}
+.header-bottom-img img{
+   width: 55vw;
+}
+.header-bottom-container{
+    text-align: right;
+    margin-left: 3.1rem;
+    margin-right: 3.1rem;
+}
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+
+    nav,
+    .nav-links ul,
+    .header-bottom{
+        flex-direction: column;
+
+    }
+    .intro-container{
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        padding: 0px;
+
+    }
+
+    ..nav-links li {
+        padding-bottom: 30px;
+        margin: 0px;
+    }
+
+    .intro-img>img {
+        max-width: 100%;
+    }
+
+    .intro-text {
+        max-width: 901px;
+    }
+    .header-bottom-container{
+        text-align: center;
+    }
+    .header-bottom-img img{
+        width: 100vw;
+     }
+
+}
+
+/* responsive for tab */
+@media screen and (min-width:576px) and (max-width:992px) {}
