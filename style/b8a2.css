@@ -269,6 +269,7 @@ nav {
     bottom: 300px;
     right: 100px;
 }
+
 /* (3) careers-container */
 .careers-container {
     display: flex;
@@ -287,8 +288,8 @@ nav {
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
-   text-align: center;
-   
+    text-align: center;
+
 }
 
 .careers-description {
@@ -296,15 +297,15 @@ nav {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-   text-align: center;
-    
+    text-align: center;
+
 }
 
 .careers-list {
     color: #FFF;
     display: flex;
     justify-content: space-around;
-   margin-left: 0px;
+    margin-left: 0px;
 
 }
 
@@ -320,7 +321,7 @@ nav {
 
 .careers-img img {
     max-width: 50vw;
-    height: 100%;
+   
 }
 
 #carees-btn {
@@ -335,6 +336,56 @@ nav {
 
 
 }
+
+/* (4)games section style */
+.box{
+    padding-top: 0px ;
+}
+.games-img{
+    /* width: 50vw;
+    height:auto; */
+    width: 60px;
+    height: 60px;
+}
+.box>a{
+    display: inline-flex;
+    gap: 16px;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+
+}
+.box:hover{
+    border: 1px solid #FF42A5;
+    max-width: 281px;
+    height:80px;
+    border-radius: 50px;
+    background: #F948B2 0%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.games {
+    display:grid ;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    gap: 50px;
+    padding: 100px 20px 100px 20px;
+    text-align: center;
+}
+
+.box h4 {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px;
+}
+
+
 
 
 /* responsive for mobile */
@@ -422,31 +473,45 @@ nav {
         position: relative;
         bottom: 120px;
     }
-/* careers-container */
-.careers-container{
-    flex-direction: column;
-    
-}
-.careers-img img{
-    max-width: 100vw;
-    height: auto;
-}
-/* .careers */
-.careers-description{
-   padding-left: 0px;
-    text-align: center;
-}
-.careers-title{
-    text-align: center;
-    padding-left: 0px;
-   
-}
-.careers-list{
-    padding: 20px;
-}
-#carees-btn{
-    margin-left: 0px;
-}
+
+    /* careers-container */
+    .careers-container {
+        flex-direction: column;
+
+    }
+
+    .careers-img img {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    /* .careers */
+    .careers-description {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .careers-title {
+        text-align: center;
+        padding-left: 0px;
+
+    }
+
+    .careers-list {
+        padding: 20px;
+    }
+
+    #carees-btn {
+        margin-left: 0px;
+    }
+    /* games section */
+    .games {
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 0px;
+        padding-left: 0px;
+        
+    }
 
 }
 
@@ -475,5 +540,12 @@ nav {
     #small-pic-1 {
         position: relative;
         right: 230px;
+    }
+    .games {
+        display:grid ;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 0px;
+        padding-left: 0px;
+        
     }
 }
