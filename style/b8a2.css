@@ -406,6 +406,8 @@ footer {
 }
 
 .footer-list-1 {
+    padding-left: 0px;
+   
     display: flex;
     color: #FFF;
     font-size: 18px;
@@ -423,6 +425,7 @@ footer {
 }
 
 .footer-icon {
+    padding-left: 0px;
     color: #FFF;
     list-style: none;
     display: flex;
@@ -438,6 +441,7 @@ footer {
 }
 
 .footer-list-2 {
+     padding-left: 0px;
     list-style: none;
     display: flex;
     color: rgba(255, 255, 255, 0.60);
@@ -446,7 +450,8 @@ footer {
     font-weight: 500;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0px;
+   
+   
 }
 .footer-list-2 li{
     margin-left: 50px;
