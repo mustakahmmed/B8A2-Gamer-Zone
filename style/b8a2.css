@@ -169,24 +169,135 @@ nav {
     line-height: 45px;
     /* 187.5% */
 }
-.header-bottom-img img{
-   width: 55vw;
+
+.header-bottom-img img {
+    width: 55vw;
 }
-.header-bottom-container{
+
+.header-bottom-container {
     text-align: right;
     margin-left: 3.1rem;
     margin-right: 3.1rem;
+}
+
+/*(B) main section */
+
+
+/* (1)card-section */
+.card-section-container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.card-section-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.card-section-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.maltipul-color-card-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    overflow-x: scroll;
+    margin-top: 40px;
+
+}
+
+.card {
+    width: 342px;
+
+}
+
+.card-description {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+
+/* (2) play instantly */
+
+.play-instantly {
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    gap:120px;
+    
+}
+
+.play-instantly-text{
+    max-width: 353px;
+    margin-left: 3.1rem;
+    margin-right: 3.1rem;
+}
+.play-instantly-text {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.play-instantly-description {
+    color: #534C64;
+text-align: right;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+#small-pic-1{
+   position: relative;
+   bottom: 300px;
+   right: 100px;
+}
+#small-pic-2{
+ position: relative;
+    bottom: 300px;
+    left: 450px;
+    right: 100px;
+}
+#text-2{
+    text-align: left;
+}
+#description-2{
+    text-align: left;
+}
+.play-games{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    gap:120px;
 }
 /* responsive for mobile */
 @media screen and (max-width:576px) {
 
     nav,
     .nav-links ul,
-    .header-bottom{
+    .header-bottom {
         flex-direction: column;
 
     }
-    .intro-container{
+
+    .intro-container {
         flex-direction: column-reverse;
     }
 
@@ -195,7 +306,7 @@ nav {
 
     }
 
-    ..nav-links li {
+    .nav-links li {
         padding-bottom: 30px;
         margin: 0px;
     }
@@ -207,12 +318,25 @@ nav {
     .intro-text {
         max-width: 901px;
     }
-    .header-bottom-container{
+
+    .header-bottom-container {
         text-align: center;
     }
-    .header-bottom-img img{
+
+    .header-bottom-img img {
         width: 100vw;
-     }
+    }
+
+    /* min card section */
+    .card-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
